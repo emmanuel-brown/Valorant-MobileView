@@ -8,10 +8,10 @@ import {
 
 import "./App.css"
 
-import Navbar from './components/navbar';
+import Navbar from './components/navbar/';
 
 //Pages
-import Home from './pages/Home/';
+import Home from './pages/home/';
 
 function App() {
   return (
