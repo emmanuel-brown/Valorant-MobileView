@@ -1,0 +1,93 @@
+@import "../../cssUtils.scss";
+
+#button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 280px;
+    height: 75px;
+    border: {
+        top: 1px $white solid;
+        bottom: 1px $white solid;
+    }
+    .sideDash{
+        content: '';
+        position: absolute;
+        height: 40%;
+        width: 1px;
+        background-color: $white;
+        &:nth-child(1){
+            top: 0;
+            left: 0;
+        }
+        &:nth-child(2){
+            bottom: 0;
+            left: 0;
+        }
+        &:nth-child(3){
+            right: 0;
+            bottom: 0;
+        }
+        &:nth-child(4){
+            top: 0;
+            right: 0;
+        }
+    }
+    .block{
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #FF4655;
+        width: 266px;
+        height: 63px;
+        .slide{
+            position: absolute;
+            bottom: 1px;
+            left: -231px;
+            width: 213px;
+            height: 234px;
+            transform: rotate(45deg);
+            background-color: #111111;
+            padding-left: 23px;
+            transition: .8s ease all;
+        }
+        .box{
+            content: '';
+            z-index: 100;
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            &:nth-last-child(1){
+                background-color: $dark;
+                left: 0;
+                top: 0;
+            }
+            &:nth-child(2){
+                background-color: $dark;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .txt{
+            font-weight: 800;
+            font-size: 18px;
+            position: absolute;
+            margin: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &:hover > .block > .slide{
+        position: absolute;
+        bottom: 1px;
+        left: -348px;
+        width: 1023px;
+        height: 1000px;
+        padding-left: 23px;
+    }
+}

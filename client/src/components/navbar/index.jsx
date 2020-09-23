@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './navbar.scss'
 import Fist from './images/riot_fist_white_circle.png'
 import Logo from './images/valorant_4_White.png'
 import Internet from './images/internet_sign.png'
