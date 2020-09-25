@@ -12,7 +12,7 @@ const Intro = () =>{
                 <img src={Val_logo} alt="" className="intro-logo"/>
                 <p className="intro-txt">A 5v5 character-based tactical shooter</p>
                 <div className="intro-button">
-                    <Button txt={"PLAY NOW"} />
+                    <Button txt="PLAY NOW" color="#F7F7F7" bgColor="#FF4655"/>
                 </div>
                 <video autoPlay loop muted className="intro-video">
                     <source src={ValorantHome} type='video/mp4' />

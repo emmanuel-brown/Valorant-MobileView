@@ -37,11 +37,11 @@
         }
     }
     #WeAreValorant{
-        margin-bottom: 70px; /*do not keep this line*/
         position: relative;
         color: #111111;
         padding: 0 5%;
         font-weight: bold;
+        padding-bottom: 70px; 
         .heading{
             margin-top: 0;
             padding-top: 80px;
@@ -54,7 +54,7 @@
             content: '';
             width: 80%;
             height: .3px;
-            top: 6%;
+            top: 5%;
         }
         .description{
             font-size: 16px;
@@ -90,6 +90,101 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+        }
+    }
+    #TheAgents{
+        overflow: hidden;
+        position: relative;
+        padding: 0 5%;
+        background-color: $red;
+        .stripeHorizontal{
+            position: absolute;
+            background-color: $white;
+            content: '';
+            width: 90%;
+            height: .3px;
+            display: block;
+            top: 11%;
+        }
+        .stripeV{
+            position: absolute;
+            background-color: $white;
+            content: '';
+            height: 100%;
+            width: .3px;
+            z-index: 1000;
+        }
+        .head{
+            font-size: 2.3em;
+            font-weight: bolder;
+            padding-top: 66px;
+        }
+        .subHead{
+            font-size: 1.3em;
+            font-weight: bolder;
+        }
+        .details{
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 24px;
+        }
+        .video{
+            width: 234%;
+            margin: 0 auto;
+            pointer-events: none;
+            padding-left: -15px;
+            transform: translateX(-32%);
+        }
+        .button{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 80%;
+        }
+    }
+    #theMaps{
+        position: relative;
+        color: $dark;
+        padding: 0 5%;
+        .stripeHorizontal{
+            position: absolute;
+            background-color: $dark;
+            content: '';
+            width: 90%;
+            height: .3px;
+            display: block;
+            top: 6%;
+        }
+        .stripeV{
+            position: absolute;
+            background-color: $dark;
+            content: '';
+            height: 100%;
+            width: .3px;
+            z-index: 1000;
+        }
+        .head{
+            padding-top: 11%;
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+        .subHead{
+            font-size: 1.4em;
+            font-weight: bold;
+        }
+        .details{
+            color: $gray2;
+            font-weight: bold;
+        }
+        .image{
+            width: 178%;
+            margin-left: -46%;
+        }
+        .button{
+            position: absolute;
+            top: 83%;
+            left: 50%;
+            transform: translate(-50%);
         }
     }
 }

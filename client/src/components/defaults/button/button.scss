@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #FF4655;
+        // background-color: #FF4655;
         width: 266px;
         height: 63px;
         .slide{
@@ -82,12 +82,17 @@
             transform: translate(-50%, -50%);
         }
     }
-    &:hover > .block > .slide{
-        position: absolute;
-        bottom: 1px;
-        left: -348px;
-        width: 1023px;
-        height: 1000px;
-        padding-left: 23px;
+    &:hover{
+        .block{
+            color: $white;
+            .slide{
+                position: absolute;
+                bottom: 1px;
+                left: -348px;
+                width: 1023px;
+                height: 1000px;
+                padding-left: 23px;
+            }
+        }
     }
 }

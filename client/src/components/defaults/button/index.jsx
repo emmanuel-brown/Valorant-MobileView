@@ -2,14 +2,14 @@ import React from 'react'
 import './button.scss'
 
 const Button = props =>{
-    const { txt, color } = props
+    const { txt, bgColor, color } = props
     return(
-        <div id="button">
+        <div id="button" style={{color}}>
             <span className="sideDash"></span>
             <span className="sideDash"></span>
             <span className="sideDash"></span>
             <span className="sideDash"></span>
-            <div className="block">
+            <div className="block" style={{backgroundColor: bgColor}}>
                 <span className="box"></span>
                 <span className="box"></span>
                 <div className="slide"></div>
