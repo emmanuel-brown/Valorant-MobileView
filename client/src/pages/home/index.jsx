@@ -3,6 +3,7 @@ import Intro from '../../components/home/Intro'
 import TheAgents from '../../components/home/TheAgents'
 import WeAreValorant from '../../components/home/WeAreValorant'
 import TheMaps from '../../components/home/TheMaps'
+import StayConnected from '../../components/home/StayConnected'
 import './home.scss'
 
 const Home = () =>{
@@ -12,6 +13,7 @@ const Home = () =>{
             <WeAreValorant />
             <TheAgents />
             <TheMaps />
+            <StayConnected />
         </main>
     )
 }

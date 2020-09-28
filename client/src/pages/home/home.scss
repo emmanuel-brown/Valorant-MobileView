@@ -143,6 +143,7 @@
         }
     }
     #theMaps{
+        overflow-x: hidden;
         position: relative;
         color: $dark;
         padding: 0 5%;
@@ -185,6 +186,37 @@
             top: 83%;
             left: 50%;
             transform: translate(-50%);
+        }
+    }
+    #stayConnected{
+        background-color: $navyBlue;
+        padding: 0% 5%;
+        .stripeV{
+            position: absolute;
+            background-color: $white;
+            content: '';
+            height: 100%;
+            width: .3px;
+            z-index: 1000;
+        }
+        .head{
+            font-size: 2.3em;
+            font-weight: bolder;
+            padding: {
+                top: 66px;
+                right: 25%;
+            }
+            margin: 0;
+        }
+        .subHead{
+            color: $gray2;
+        }
+        .media{
+            display: flex;
+            justify-content: space-around;
+            &-icon{
+                font-size: 30px;
+            }
         }
     }
 }
