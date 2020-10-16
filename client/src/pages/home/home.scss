@@ -218,5 +218,24 @@
                 font-size: 30px;
             }
         }
+        #carousel{
+            .positioning{
+                display: flex;
+                margin: 75px 0px;
+                :nth-child(1){
+                    margin-left: 0;
+                }
+                &-block{
+                    content: '';
+                    height: 4px;
+                    width: 35px;
+                    border: 1px #F7F7F7 solid;
+                    margin: 0px 3px;
+                    :focus{
+                        background-color: $red;
+                    }
+                }
+            }
+        }
     }
 }
